@@ -36,7 +36,7 @@ export default function Page() {
 
       <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold mb-4 text-black">
-          Discover the world's top designers & creatives
+          Discover the world top designers & creatives
         </h1>
         <p className="text-sm mb-8 text-black">
           Find talents and connect with a creative people
@@ -93,12 +93,9 @@ export default function Page() {
           </form>
         </div>
 
-        {/* Middle column (empty space for separation) */}
         <div className="flex-1"></div>
 
-        {/* Right column (additional content if needed) */}
         <div className="flex-1">
-          {/* Add any content for the right column if needed */}
         </div>
       </div>
     </div>
