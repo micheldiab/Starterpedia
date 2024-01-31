@@ -1,5 +1,10 @@
 /* styles.module.css */
 
+.square-card {
+    height: 200px; /* Adjust this value according to your preference */
+    width: 200px;  /* Adjust this value according to your preference */
+  }
+
 .container {
 
     margin: 0 auto;

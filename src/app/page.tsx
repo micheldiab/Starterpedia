@@ -7,43 +7,42 @@ import { Twitter, Youtube, GitHub } from 'react-feather';
 export default function Page() {
   return (
     <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
-      <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold hover:underline focus:underline">
-          Starterpedia
+    <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
+      <a href="/" className="text-2xl font-bold hover:underline focus:underline">
+        Starterpedia
+      </a>
+      <nav className="flex space-x-4">
+        <a href="Leaderboard" className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
+          Leaderboard
         </a>
-        <nav className="flex space-x-4">
-          <a href="Leaderboard" className="hover:text-gray-300">
-            Leaderboard
-          </a>
-          <a href="Bookmarks" className="hover:text-gray-300">
-            Bookmarks
-          </a>
-          <a href="Advertise" className="hover:text-gray-300">
-            Advertise
-          </a>
-          <a href="About" className="hover:text-gray-300">
-            About
-          </a>
-        </nav>
-        <div className="flex space-x-4">
-          <button className="bg-green-500 text-white px-4 py-2 rounded">
-            Submit
-          </button>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded">
-            Login
-          </button>
-          <button className="bg-yellow-500 text-white px-4 py-2 rounded">
-            Sign Up
-          </button>
-        </div>
-      </header>
-
+        <a href="Bookmarks" className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
+          Bookmarks
+        </a>
+        <a href="Advertise" className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
+          Advertise
+        </a>
+        <a href="About" className="hover:text-gray-300 transition duration-300 ease-in-out transform hover:scale-105">
+          About
+        </a>
+      </nav>
+      <div className="flex space-x-4">
+        <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105">
+          Submit
+        </button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">
+          Login
+        </button>
+        <button className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105">
+          Sign Up
+        </button>
+      </div>
+    </header>
       <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold mb-4 text-black font-serif italic tracking-wide leading-relaxed">
           Discover the world top designers & creatives
         </h1>
-        <p className="text-sm mb-8 text-black font-serif italic tracking-wide leading-relaxed">
-          Find talents and connect with creative people.
+        <p className="text-sm mb-8 font-bold text-black font-serif italic tracking-wide leading-relaxed">
+          Find talents and connect with creative people
         </p>
         <div className="flex items-center mb-4 transition-transform duration-300 ease-in-out transform">
           <div className="relative mr-2">
@@ -69,11 +68,12 @@ export default function Page() {
             />
           </div>
         </div>
-      </div>
-
-      <div className="max-w-4xl mx-auto my-8 bg-white rounded-md overflow-hidden shadow-md p-8">
+        <div className="max-w-2xl mx-auto my-8 bg-white rounded-md overflow-hidden shadow-lg p-8 square-card">
         <DesignerInfo name="Tom Ford" photoUrl="/TomFord.png" />
       </div>
+      </div>
+
+   
 
       <div className="bg-gray-800 text-white p-4 text-center flex" style={{ paddingLeft: '7rem' }}>
         {/* Left column */}
